@@ -12,14 +12,10 @@ public class RecipeResponse implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
-//	@JsonProperty(value = "@graph")
-//	private Graph[] graph;
-	
-	@JsonProperty(value = "recipeInstructions")
-	private String instructions;
 	
 	@JsonProperty(value = "recipeIngredient")
 	private String[] recipeIngredient;
-	
+
+	@JsonProperty(value = "recipeInstructions")
+	private String instructions;
 }
